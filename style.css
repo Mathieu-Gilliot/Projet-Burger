@@ -1,0 +1,146 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+.main .coloneG, .main .centre, .main .coloneD {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1vh;
+}
+
+.main {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  display: flex;
+}
+.main .coloneG .items, .main .centre .items, .main .coloneD .items {
+  flex: 1;
+  border: 1px red solid;
+  width: 100%;
+  text-align: center;
+}
+.main .coloneG #menu, .main .centre #menu, .main .coloneD #menu {
+  flex: 2;
+  border: 1px blue solid;
+  width: 100%;
+  text-align: center;
+}
+
+.centre #titre {
+  text-align: center;
+  flex: 0.5;
+  border: 1px black solid;
+  width: 100%;
+}
+.centre #burger {
+  flex: 2;
+  border: 1px pink solid;
+  width: 100%;
+}
+.centre #reservation {
+  flex: 0.5;
+  border: 1px black solid;
+  width: 100%;
+}
+
+.coloneD #reduc {
+  flex: 0.5;
+  border: 1px green solid;
+  width: 100%;
+}
+
+#Slogan {
+  font-size: 2.5rem;
+}
+
+#sugg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sugg #petit {
+  height: 25%;
+  width: 25%;
+}
+#sugg #petit img {
+  width: 100%;
+}
+
+.centre #titre {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.centre #burger img {
+  width: 100%;
+}
+.centre #reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centre #reservation #reserve {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border: 1vh solid white;
+  padding: 2vh;
+}
+
+/*# sourceMappingURL=style.css.map */
