@@ -1,0 +1,155 @@
+@import "libs/reset.scss";
+@import "libs/responsive.scss";
+@import "libs/mixins.scss";
+@import "libs/scss/fontawesome.scss";
+@import "libs/scss/solid.scss";
+@import "libs/scss/regular.scss";
+@import "libs/scss/brands.scss";
+
+%encarts {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html{
+  font-size:2vh;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background: -webkit-linear-gradient(top left, rgb(219, 103, 78) 60%, rgb(229, 137, 112) 40%);
+  font-family: "Balsamiq Sans", cursive;
+}
+.main {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  display: flex;
+  .coloneG,
+  .centre,
+  .coloneD {
+    @extend %encarts;
+    .items {
+      @include item(1, 1px, transparent, 100%);
+      text-align: center;
+    }
+  }
+}
+.coloneG {
+  #Slogan {
+    font-size: 2rem;
+    color: white;
+    font-weight:bold ;
+    position:relative;
+    p{
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  #menu {
+    @include item(1.5, 1px, transparent, 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      height: 10%;
+      i {
+        font-size: 1rem;
+        color: lightgray;
+        font-style: normal;
+      }
+      .far {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+    #sugg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      color:white;
+       h3{
+         font-size: 1.5rem;
+       }
+      .suggestion{
+        color:orange;
+      }
+      #petit {
+        height: 25%;
+        width: 25%;
+        position:absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .centre {
+    #titre {
+      text-align: center;
+      @include item(0.5, 1px, transparent, 100%);
+      font-size: 1.4rem;
+      color: yellow;
+    }
+    #burger {
+      @include item(2, 1px, transparent, 100%);
+      img {
+        width: 100%;
+      }
+    }
+    #reservation {
+      @include item(0.5, 1px, transparent, 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #reserve {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        border: 0.3vh solid white;
+        padding: 2vh;
+      }
+    }
+  }
+  .coloneD {
+    #reduc {
+      @include item(0.9, 1px, transparent, 100%);
+      font-size:4rem;
+      font-weight:bold;
+      color:white;
+      text-transform: uppercase;
+      #pourcentage{
+        font-size: 13rem;
+        margin-left:-35%;
+      }
+      #gran{
+        font-size: 6rem;
+      }
+      #sousslogan
+      {
+        display: inline-block;
+        width:50%;
+        font-size: 0.9rem;
+        text-align: justify;
+        font-weight: normal;
+      }
+    }
+  }
+
+
+
+

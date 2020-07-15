@@ -1,0 +1,20 @@
+
+@mixin prefixe($transformation){
+    transform:$transformation;
+    -webkit-transform:$transformation;
+    -o-transform:$transformation;
+    -ms-transform:$transformation;
+    -moz-transform:$transformation;
+}
+@mixin item ($flex,$border,$color,$width){
+    flex:$flex;
+    border:$border $color solid;
+    width:$width;
+}
+@mixin gradient($type,$orientation){
+   background:-webkit-$type#-gardient$orientation;
+   background:-moz-$type#-gardient$orientation;
+   background:-o-$type#-gardient$orientation;
+   background:-ms-$type#-gardient$orientation;
+}
+

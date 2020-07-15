@@ -1,0 +1,179 @@
+*
+{
+    margin:0;
+    padding:0
+}
+html
+{
+    font-size:3vh;
+}
+body
+{
+    background: -webkit-linear-gradient(top left, rgb(219,103,78) 60%, rgb(229,137,112) 40%);
+    width: 100vW;
+    height:100vh;
+    font-family: 'Balsamiq Sans', cursive, sans-serif;
+}
+
+#main
+{
+    position:absolute;
+    top:2.5%;
+    left:2.5%;
+    width: 95%;
+    height: 95%;
+    display:flex;
+    flex-direction: row;
+}
+
+#gauche,#droite,#centre
+{
+    display:flex;
+    flex-direction:column;
+}
+#gauche,#droite
+{
+    width: 30%;
+}
+#centre
+{
+    flex:40%;
+}
+#gauche
+{
+    justify-content: space-between;
+}
+#slogan
+{
+    flex:0.25;
+    font-size: 2.3rem;
+    color:white;
+    padding-left:15%;
+    padding-top: 15%;
+    font-weight: bold;
+}
+#menu
+{
+    flex:0.1;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstcircle
+{
+    color:#FFFFFF;
+}
+.circle
+{
+   color:#ed9467;
+   font-size:0.5rem;
+}
+.firstcircle,.circle
+{
+    margin-bottom:1vh;
+}
+#suggestion
+{
+    flex:0.4;
+    display:flex;
+    flex-direction: column;
+    width: 75%;
+    align-self: center;
+}
+#burgersug
+{
+    flex:0.6;
+    text-align: center;   
+}
+h3
+{
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}
+#jaune
+{
+    color:orange;
+}
+#burgersug>img
+{
+    width:50%;
+}
+.shadowsugg
+{
+    box-shadow: 0 1vh 6vh 1vh;
+    width:40%;
+    margin-left:30%;
+
+}
+#titre,#reservation
+{
+    flex:0.3;
+}
+#titre
+{
+    color:orange;
+    text-align: center;
+}
+#caroussel
+{
+    flex: 0.5;
+    text-align:center;
+}
+#caroussel>img
+{
+    width:80%;
+}
+.shadow
+{
+    box-shadow: 0 6vh 6vh 1vh ;
+    width:60%;
+    margin-left: 20%;
+}
+#reservation
+{
+    text-align:center;
+}
+#bouton
+{
+    width:60%;
+    margin-top:18%;
+    margin-left:16%;
+    border:0.5vh solid white;
+    color: white;
+    border-radius:10px;
+    padding: 2% 4% 2% 4%;
+}
+#droite
+{
+    justify-content: center;
+}
+#reduc
+{
+    flex:0.5;
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    line-height: 2.5rem;
+    font-weight:bold;
+    margin-left:-50%;
+   
+}
+#pourcentage
+{
+    font-size: 10rem;
+    margin-left: -25%;
+}
+.sousslogan
+{
+    font-size:0.6rem;
+    line-height:1rem;
+}
+.gran
+{
+    font-size:4rem;
+}
+
+
+
