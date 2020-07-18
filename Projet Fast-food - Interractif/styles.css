@@ -13,13 +13,39 @@ body
     width: 100vW;
     height:100vh;
     font-family: 'Balsamiq Sans', cursive, sans-serif;
+    color:white;
+}
+.nuit{
+    background: -webkit-linear-gradient(top left, rgba(0, 0, 0, 0.616) 70%, rgb(117, 117, 117)30%);
+    color: orange;
+}
+.nuit a:visited{
+    color:orange;
+}
+.nuit #reservation{
+    border:1px solid orange;
+}
+.nuit form input:checked::before
+{
+    background-color: rgba(0, 0, 0, 0.616));
+    border: 1px solid orange;
+}
 
+button{
+    left:2.5%;
+    z-index: 999;
+    background: none;
+    border:none;
+    position:absolute;
+}
+button:active{
+    border:none;
 }
 #langue{
-    position:absolute;
     top:2.5%;
-    left:5%;
-    z-index: 999;
+}
+#dark{
+    top:15%;
 }
 .mainenglish
 {
@@ -61,8 +87,7 @@ header
   width: 25%;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #FFF;
-  margin-right: 7.5%;
+  margin-right: 4%;
   margin-left: 7%;
   margin-top: 2.5%;
 
@@ -215,7 +240,6 @@ form input:nth-child(1)
 #promo
 {
     position: absolute;
-    color: white;
     font-size: 3rem;
     width:30%;
     left: 60%;
@@ -277,7 +301,6 @@ footer
     margin-left: 2.5%;
     margin-top: -3.5%;
     text-align: center;
-    color: white;
 }
 
 .sugcolor
@@ -293,8 +316,6 @@ h3
 
 #reservation
 {
-
-    color:white;
     border: 1px solid white;
     text-align: center;
     height: 20%;
@@ -309,7 +330,6 @@ h3
 a
 {
     text-decoration: none;
-    color: white;
 }
 
 a:visited
